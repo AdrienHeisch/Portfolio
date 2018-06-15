@@ -15,7 +15,8 @@
         "open": "start chrome file:///D:/Dev/Web/Portfolio/dist/index.html",
         "serve": "http-server ./dist/",
         "build": "tcm src && webpack -d",
-        "build-prod": "tcm src && webpack -p"
+        "build-prod": "tcm src && webpack -p",
+        "deploy": "npm run build-prod && gh-pages -d dist"
     },
     "dependencies": {
         "@material-ui/core": "^1.2.0",
@@ -34,6 +35,7 @@
         "css-loader": "^0.28.11",
         "file-loader": "^1.1.11",
         "fork-ts-checker-webpack-plugin": "^0.4.2",
+        "gh-pages": "^1.2.0",
         "material-ui-time-picker": "^1.0.0",
         "style-loader": "^0.21.0",
         "ts-loader": "^4.3.1",
