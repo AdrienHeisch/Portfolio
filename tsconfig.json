@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "typeRoots": [
+            "./@types"
+        ],
+        "noImplicitAny": true,
+        "module": "es6",
+        "target": "es6",
+        "allowJs": true,
+        "experimentalDecorators": true,
+        "jsx": "react",
+        "moduleResolution": "node",
+        "lib": [
+            "dom",
+            "es2015"
+        ]
+    }
+}
