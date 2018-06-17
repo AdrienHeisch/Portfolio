@@ -10,17 +10,18 @@
     },
     "homepage": "https://github.com/AdrienHeisch/Portfolio#readme",
     "scripts": {
-        "watch": "tcm -w src",
         "start": "npm run build && npm run open",
         "open": "start chrome file:///D:/Dev/Web/Portfolio/dist/index.html",
         "serve": "http-server ./dist/",
-        "build": "tcm src && webpack -d",
-        "build-prod": "tcm src && webpack -p",
+        "type-css": "tcm src",
+        "build": "npm run type-css && webpack -d",
+        "build-prod": "npm run type-css && webpack -p",
         "deploy": "npm run build-prod && gh-pages -d dist"
     },
     "dependencies": {
         "@material-ui/core": "^1.2.0",
         "@material-ui/icons": "^1.1.0",
+        "markdown-to-jsx": "^6.6.6",
         "react": "^16.4.0",
         "react-dom": "^16.4.0"
     },
@@ -37,6 +38,7 @@
         "fork-ts-checker-webpack-plugin": "^0.4.2",
         "gh-pages": "^1.2.0",
         "material-ui-time-picker": "^1.0.0",
+        "raw-loader": "^0.5.1",
         "style-loader": "^0.21.0",
         "ts-loader": "^4.3.1",
         "typed-css-modules": "^0.3.4",

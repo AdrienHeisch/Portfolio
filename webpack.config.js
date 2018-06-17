@@ -48,7 +48,18 @@ module.exports = {
             {
                 test: /\.png$/,
                 include: /assets/,
-                loader: 'file-loader'
+                loader: 'file-loader',
+                options: {
+                    name: 'assets/[hash].[ext]'
+                }
+            },
+            {
+                test: /\.md$/,
+                include: /assets/,
+                loader: 'raw-loader',
+                options: {
+                    name: 'assets/[hash].[ext]'
+                }
             }
         ]
     },

@@ -1,17 +1,26 @@
-import './App.css';
-import nspImg from '../../../assets/images/NotSpaceWar.png';
+// import styles from './App.css';
 
 import * as React from 'react';
+import { Project } from '../project/Project';
 
-export default class App extends React.Component {
+export class App extends React.Component<IAppProps, IAppState> {
 
     public render ():JSX.Element {
         return (
-            <div>
-                <span>Hello world!</span>
-                <img src={nspImg} />
-            </div>
+            <>
+                {this.props.projects.map(pProjectData => (
+                    <Project key={pProjectData.name} data={pProjectData} />
+                ))}
+            </>
         );
     } 
+
+}
+
+export interface IAppProps {
+    projects:Array<ProjectData>;
+}
+
+interface IAppState {
 
 }

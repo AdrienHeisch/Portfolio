@@ -1,21 +1,30 @@
-import './Main.css';
+import './stylesheets/Main.css';
+import './stylesheets/Fonts.css';
 
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import App from './components/app/App';
+import { App } from './components/app/App';
 
-export default abstract class Main {
+import jsonData from '../assets/projects.json';
 
-    public static projects:Array<any> = [
-        { name: 'NotSpaceWar', type: 'game', tech:[ 'ActionScript3', 'Adobe Flash/Animate' ], mobile:false, webUrl: '', sourceUrl: '', imgUrl: '' }
-    ]
+export abstract class Main {
 
-    public static init ():void {
-        this.renderApp();
+    public static async init ():Promise<void> {
+        const projects:Array<ProjectData> = jsonData;
+        // await this.importImages(projects);
+        this.renderApp(projects);
     }
 
-    private static renderApp ():void {
-        ReactDOM.render(React.createElement(App), document.getElementById('root'));
+    private static async importImages (pProjects:Array<ProjectData>):Promise<void> {
+        // await Promise.all(
+        //     pProjects.map(
+        //         pProject => import(`../assets/images/${pProject.name}.png`).then(pResponse => pProject.imageSrc = pResponse.default)
+        //     )
+        // );
+    }
+
+    private static renderApp (pProjects:Array<ProjectData>):void {
+        ReactDOM.render(React.createElement(App, { projects: pProjects }), document.getElementById('root'));
     }
 
 }

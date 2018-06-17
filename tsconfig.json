@@ -5,7 +5,7 @@
             "./@types"
         ],
         "noImplicitAny": true,
-        "module": "es6",
+        "module": "esnext",
         "target": "es6",
         "allowJs": true,
         "experimentalDecorators": true,

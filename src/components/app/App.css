@@ -1,6 +1,0 @@
-@value myFontWeight from '../../Main.css';
-
-span {
-    font-family: 'Roboto', sans-serif;
-    font-weight: myFontWeight;
-}
