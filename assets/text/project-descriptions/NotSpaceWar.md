@@ -12,4 +12,4 @@ NotSpaceWar épure le classique SpaceWar! de son élément clé, le trou noir, p
     - Adobe Flash Player
     - Adobe Animate
 
-<div>![](°project-image°)</div>
+![](°project-image°)

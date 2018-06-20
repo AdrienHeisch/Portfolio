@@ -1,1 +1,1 @@
-
+export const projects: string;

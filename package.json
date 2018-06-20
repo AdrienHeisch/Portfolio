@@ -10,10 +10,9 @@
     },
     "homepage": "https://github.com/AdrienHeisch/Portfolio#readme",
     "scripts": {
-        "start": "npm run build && npm run open",
-        "open": "start chrome file:///D:/Dev/Web/Portfolio/dist/index.html",
-        "serve": "http-server ./dist/",
+        "start": "webpack-dev-server --open",
         "type-css": "tcm src",
+        "watch-type-css": "tcm -w src",
         "build": "npm run type-css && webpack -d",
         "build-prod": "npm run type-css && webpack -p",
         "deploy": "npm run build-prod && gh-pages -d dist"
@@ -23,7 +22,9 @@
         "@material-ui/icons": "^1.1.0",
         "markdown-to-jsx": "^6.6.6",
         "react": "^16.4.0",
-        "react-dom": "^16.4.0"
+        "react-custom-scrollbars": "^4.2.1",
+        "react-dom": "^16.4.0",
+        "react-localization": "^1.0.10"
     },
     "devDependencies": {
         "@types/react": "^16.3.16",
@@ -46,6 +47,8 @@
         "typings-for-css-modules-loader": "^1.7.0",
         "webpack": "^4.11.0",
         "webpack-bundle-analyzer": "^2.13.1",
-        "webpack-cli": "^3.0.2"
+        "webpack-cli": "^3.0.2",
+        "webpack-dev-server": "^3.1.4",
+        "webpack-shell-plugin": "^0.5.0"
     }
 }

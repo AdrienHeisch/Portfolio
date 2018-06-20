@@ -7,3 +7,5 @@ Une application pour se fixer des objectifs journaliers : une heure de musique, 
     - TypeScript
     - React.js
     - Webpack
+
+![](°project-image°)

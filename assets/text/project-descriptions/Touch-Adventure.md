@@ -7,5 +7,8 @@ Un clone du jeu "Mmm fingers", où l'on doit éviter avec son doigt les obstacle
     - Animations réalisées personnellement (par un programmeur !)
 + Technologies utilisées :
     - ActionScript 3
+    - Starling
     - Adobe Air
     - Adobe Animate
+
+![](°project-image°)

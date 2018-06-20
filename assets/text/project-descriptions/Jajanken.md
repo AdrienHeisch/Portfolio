@@ -8,8 +8,9 @@ Une sorte de pierre-feuille-ciseau déguisée en jeu de carte avec des samouraï
     - Système de parties permettant de rejoindre le joueur de son choix
 + Technologies utilisées :
     - Javascript
-    - JQuery
-    - HTML DOM
-    - CSS3
+    - HTML DOM + JQuery
+    - CSS3 Keyframes
     - Node.js
     - Websockets
+
+![](°project-image°)

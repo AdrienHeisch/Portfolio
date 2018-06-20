@@ -1,7 +1,7 @@
 Une version du classique jeu "Snake".   
 
 + Projet personnel, Octobre 2017
-+ Jeu de type "Snake", 2D vue de dessus, 1 joueur
++ Clone de Snake, 2D vue de dessus, 1 joueur
 + Plateforme : Adobe Flash Player
 + Features :
     - Difficulté progressive
@@ -11,4 +11,4 @@ Une version du classique jeu "Snake".
     - Adobe Flash Player
     - Adobe Animate
 
-<div>![](°project-image°)</div>
+![](°project-image°)

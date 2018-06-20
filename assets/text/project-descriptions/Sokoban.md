@@ -2,7 +2,7 @@ A l'issue d'un devoir de game design nous demandant de créer une variante du je
 j'ai décidé de programmer le jeu de façon à ce que chaque élève puisse y implémenter sa propre fonctionnalité.
 
 + Projet personnel, Mars 2018
-+ 2D vue de dessus, 1 joueur
++ Clone de Sokoban, 2D vue de dessus, 1 joueur
 + Plateforme : Web
 + Features :
     - Jeu de sokoban générique
@@ -12,3 +12,5 @@ j'ai décidé de programmer le jeu de façon à ce que chaque élève puisse y i
     - Javascript
     - HTML5 DOM
     - JQuery
+
+![](°project-image°)

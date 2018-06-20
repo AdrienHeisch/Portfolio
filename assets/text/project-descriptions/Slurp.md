@@ -8,4 +8,6 @@ Le projet le plus important de ma première année à Isart Digital, un "shoot t
 + Technologies utilisées :
     - ActionScript 3
     - Adobe Flash Player
-    - Adobe Animate 
+    - Adobe Animate
+
+![](°project-image°)

@@ -1,7 +1,8 @@
 declare type ProjectData = {
     name:string;
-    ghAuthor:string;
     type:string;
-    stack:Array<string>;
+    tech:string;
     mobile:false;
+    url:string;
+    source:string;
 }

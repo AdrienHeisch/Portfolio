@@ -1,122 +1,91 @@
 [
     {
         "name": "NotSpaceWar",
-        "ghAuthor": "AdrienHeisch",
-        "stack":[
-            "ActionScript",
-            "Adobe Flash",
-            "Adobe Animate CC"
-        ],
-        "mobile": false
+        "tech": "Adobe Flash",
+        "mobile": false,
+        "url": "https://adrienheisch.github.io/NotSpaceWar/",
+        "source": "https://github.com/AdrienHeisch/NotSpaceWar/"
     },
     {
         "name": "SnakeAS3",
-        "ghAuthor": "AdrienHeisch",
-        "stack":[
-            "ActionScript",
-            "Adobe Flash",
-            "Adobe Animate CC"
-        ],
-        "mobile": false
+        "tech": "Adobe Flash",
+        "mobile": false,
+        "url": "https://adrienheisch.github.io/SnakeAS3/",
+        "source": "https://github.com/AdrienHeisch/SnakeAS3/"
     },
     {
         "name": "Volley-Pong",
         "ghAuthor": "AdrienHeisch",
-        "stack":[
-            "ActionScript",
-            "Adobe Flash",
-            "Adobe Animate CC"
-        ],
-        "mobile": false
+        "tech": "HTML5",
+        "mobile": true,
+        "url": "https://volley-pong.herokuapp.com/",
+        "source": "https://github.com/AdrienHeisch/Volley-Pong/"
     },
     {
         "name": "Touch-Adventure",
         "ghAuthor": "AdrienHeisch",
-        "stack":[
-            "ActionScript",
-            "Adobe Flash",
-            "Adobe Animate CC"
-        ],
-        "mobile": false
+        "tech": "Adobe Flash",
+        "mobile": true,
+        "url": "./Touch-Aventure"
     },
     {
         "name": "ships.io",
         "ghAuthor": "AdrienHeisch",
-        "stack":[
-            "ActionScript",
-            "Adobe Flash",
-            "Adobe Animate CC"
-        ],
-        "mobile": false
+        "tech": "HTML5",
+        "source": "https://github.com/AdrienHeisch/ships.io/tree/development"
     },
     {
         "name": "Sokoban",
         "ghAuthor": "AdrienHeisch",
-        "stack":[
-            "ActionScript",
-            "Adobe Flash",
-            "Adobe Animate CC"
-        ],
-        "mobile": false
+        "tech": "HTML5",
+        "mobile": true,
+        "url": "https://adrienheisch.github.io/Sokoban/",
+        "source": "https://github.com/AdrienHeisch/Sokoban/"
     },
     {
         "name": "Sokoban-Chicken",
         "ghAuthor": "AdrienHeisch",
-        "stack":[
-            "ActionScript",
-            "Adobe Flash",
-            "Adobe Animate CC"
-        ],
-        "mobile": false
+        "tech": "HTML5",
+        "mobile": true,
+        "url": "https://adrienheisch.github.io/NotSpaceWar/",
+        "source": "https://github.com/AdrienHeisch/NotSpaceWar/"
     },
     {
         "name": "Slurp",
         "ghAuthor": "AdrienHeisch",
-        "stack":[
-            "ActionScript",
-            "Adobe Flash",
-            "Adobe Animate CC"
-        ],
-        "mobile": false
+        "tech": "Adobe Flash",
+        "mobile": false,
+        "url": "https://adrienheisch.github.io/NotSpaceWar/"
     },
     {
         "name": "NotSpaceWarHx",
         "ghAuthor": "AdrienHeisch",
-        "stack":[
-            "ActionScript",
-            "Adobe Flash",
-            "Adobe Animate CC"
-        ],
-        "mobile": false
+        "tech": "Haxe",
+        "mobile": true,
+        "url": "https://adrienheisch.github.io/NotSpaceWarHx/",
+        "source": "https://github.com/AdrienHeisch/NotSpaceWarHx/"
     },
     {
         "name": "Jajanken",
         "ghAuthor": "AdrienHeisch",
-        "stack":[
-            "ActionScript",
-            "Adobe Flash",
-            "Adobe Animate CC"
-        ],
-        "mobile": false
+        "tech": "HTML5",
+        "mobile": false,
+        "url": "https://adrienheisch.github.io/NotSpaceWar/"
     },
     {
         "name": "Timers-React",
         "ghAuthor": "AdrienHeisch",
-        "stack":[
-            "ActionScript",
-            "Adobe Flash",
-            "Adobe Animate CC"
-        ],
-        "mobile": false
+        "tech": "HTML5",
+        "mobile": true,
+        "url": "https://adrienheisch.github.io/Timers-React/",
+        "source": "https://github.com/AdrienHeisch/Timers-React/"
     },
     {
         "name": "Timers",
         "ghAuthor": "AdrienHeisch",
-        "stack":[
-            "ActionScript",
-            "Adobe Flash",
-            "Adobe Animate CC"
-        ],
-        "mobile": false
+        "tech": "HTML5",
+        "mobile": true,
+        "url": "https://adrienheisch.github.io/Timers/",
+        "source": "https://github.com/AdrienHeisch/Timers/"
     }
 ]

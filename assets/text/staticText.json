@@ -1,0 +1,26 @@
+{
+    "en": {
+        "projectDialog": {
+            "buttons": {
+                "try": "Try it",
+                "source": "See source code"
+            },
+            "snackbars": {
+                "mobile": "This project won't run on your current device.",
+                "source": "Sorry, but the source code for this project is not public."
+            }
+        }
+    },
+    "fr": {
+        "projectDialog": {
+            "buttons": {
+                "try": "Tester",
+                "source": "Code source"
+            },
+            "snackbars": {
+                "mobile": "Ce projet n'est pas compatible avec votre appareil actuel.",
+                "source": "Désolé, mais le code source de ce projet n'est pas accessible."
+            }
+        }
+    }
+}
