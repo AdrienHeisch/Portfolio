@@ -3,5 +3,9 @@
 
 html {
     font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+@font-face {
     font-display: fallback;
 }

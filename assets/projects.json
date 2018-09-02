@@ -1,91 +1,82 @@
 [
     {
-        "name": "NotSpaceWar",
-        "tech": "Adobe Flash",
-        "mobile": false,
-        "url": "https://adrienheisch.github.io/NotSpaceWar/",
-        "source": "https://github.com/AdrienHeisch/NotSpaceWar/"
-    },
-    {
-        "name": "SnakeAS3",
-        "tech": "Adobe Flash",
-        "mobile": false,
-        "url": "https://adrienheisch.github.io/SnakeAS3/",
-        "source": "https://github.com/AdrienHeisch/SnakeAS3/"
-    },
-    {
-        "name": "Volley-Pong",
-        "ghAuthor": "AdrienHeisch",
+        "name": "Portfolio",
         "tech": "HTML5",
         "mobile": true,
-        "url": "https://volley-pong.herokuapp.com/",
-        "source": "https://github.com/AdrienHeisch/Volley-Pong/"
-    },
-    {
-        "name": "Touch-Adventure",
-        "ghAuthor": "AdrienHeisch",
-        "tech": "Adobe Flash",
-        "mobile": true,
-        "url": "./Touch-Aventure"
-    },
-    {
-        "name": "ships.io",
-        "ghAuthor": "AdrienHeisch",
-        "tech": "HTML5",
-        "source": "https://github.com/AdrienHeisch/ships.io/tree/development"
-    },
-    {
-        "name": "Sokoban",
-        "ghAuthor": "AdrienHeisch",
-        "tech": "HTML5",
-        "mobile": true,
-        "url": "https://adrienheisch.github.io/Sokoban/",
-        "source": "https://github.com/AdrienHeisch/Sokoban/"
-    },
-    {
-        "name": "Sokoban-Chicken",
-        "ghAuthor": "AdrienHeisch",
-        "tech": "HTML5",
-        "mobile": true,
-        "url": "https://adrienheisch.github.io/NotSpaceWar/",
-        "source": "https://github.com/AdrienHeisch/NotSpaceWar/"
-    },
-    {
-        "name": "Slurp",
-        "ghAuthor": "AdrienHeisch",
-        "tech": "Adobe Flash",
-        "mobile": false,
-        "url": "https://adrienheisch.github.io/NotSpaceWar/"
-    },
-    {
-        "name": "NotSpaceWarHx",
-        "ghAuthor": "AdrienHeisch",
-        "tech": "Haxe",
-        "mobile": true,
-        "url": "https://adrienheisch.github.io/NotSpaceWarHx/",
-        "source": "https://github.com/AdrienHeisch/NotSpaceWarHx/"
-    },
-    {
-        "name": "Jajanken",
-        "ghAuthor": "AdrienHeisch",
-        "tech": "HTML5",
-        "mobile": false,
-        "url": "https://adrienheisch.github.io/NotSpaceWar/"
+        "url": "https://adrienheisch.github.io/Portfolio/",
+        "source": "https://github.com/AdrienHeisch/Portfolio/"
     },
     {
         "name": "Timers-React",
-        "ghAuthor": "AdrienHeisch",
         "tech": "HTML5",
         "mobile": true,
         "url": "https://adrienheisch.github.io/Timers-React/",
         "source": "https://github.com/AdrienHeisch/Timers-React/"
     },
     {
+        "name": "ships.io",
+        "tech": "HTML5",
+        "mobile": false,
+        "source": "https://github.com/AdrienHeisch/ships.io/tree/development"
+    },
+    {
+        "name": "Touch-Adventure",
+        "tech": "Adobe Flash",
+        "mobile": true,
+        "url": "./projects/touch-adventure"
+    },
+    {
         "name": "Timers",
-        "ghAuthor": "AdrienHeisch",
         "tech": "HTML5",
         "mobile": true,
         "url": "https://adrienheisch.github.io/Timers/",
         "source": "https://github.com/AdrienHeisch/Timers/"
+    },
+    {
+        "name": "NotSpaceWarHx",
+        "tech": "Haxe",
+        "mobile": true,
+        "url": "https://adrienheisch.github.io/NotSpaceWarHx/",
+        "source": "https://github.com/AdrienHeisch/NotSpaceWarHx/"
+    },
+    {
+        "name": "Sokoban",
+        "tech": "HTML5",
+        "mobile": true,
+        "url": "https://adrienheisch.github.io/Sokoban/",
+        "source": "https://github.com/AdrienHeisch/Sokoban/"
+    },
+    {
+        "name": "Jajanken",
+        "tech": "HTML5",
+        "mobile": false,
+        "url": "https://jajanken-gdp2021.herokuapp.com/"
+    },
+    {
+        "name": "Volley-Pong",
+        "tech": "HTML5",
+        "mobile": true,
+        "url": "https://volley-pong.herokuapp.com/",
+        "source": "https://github.com/AdrienHeisch/Volley-Pong/"
+    },
+    {
+        "name": "Slurp",
+        "tech": "Adobe Flash",
+        "mobile": false,
+        "url": "./projects/slurp/index.html"
+    },
+    {
+        "name": "NotSpaceWar",
+        "tech": "Adobe Flash",
+        "mobile": false,
+        "url": "https://adrienheisch.github.io/NotSpaceWar/game.html",
+        "source": "https://github.com/AdrienHeisch/NotSpaceWar/"
+    },
+    {
+        "name": "SnakeAS3",
+        "tech": "Adobe Flash",
+        "mobile": false,
+        "url": "https://adrienheisch.github.io/SnakeAS3/snake_game.html",
+        "source": "https://github.com/AdrienHeisch/SnakeAS3/"
     }
 ]

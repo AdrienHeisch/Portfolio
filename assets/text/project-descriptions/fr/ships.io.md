@@ -1,4 +1,4 @@
-Un projet en collaboration avec d'autres élèves de ma classe à Isart Digital. Il s'agit probablement de mon projet le plus ambitieux sans l'appui d'Isart Digital.
+Un projet en cours, en collaboration avec d'autres élèves de ma classe à Isart Digital. Il s'agit probablement de mon projet le plus ambitieux sans l'appui d'Isart Digital.
 
 + Projet personnel, Juin 2018 - ?
 + Jeu de combat spatial, 2D vue de dessus, multijoueurs

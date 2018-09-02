@@ -1,6 +1,8 @@
+ENGLISH
+
 La version de mon groupe pour le devoir de game design sur le jeu "Sokoban", implémentée dans la version générique que j'ai dévelopée. Le joueur doit amener les "poulets" (carrés jaunes) sur les emplacements habituellement destinés aux caisses.
 
-+ Projet personnel, Mars 2018
++ Personnal project, March 2018
 + Inspiré de sokoban, 2D vue de côté, 1 joueur
 + Plateforme : Web
 + Features :
@@ -8,8 +10,8 @@ La version de mon groupe pour le devoir de game design sur le jeu "Sokoban", imp
     - Un jeu classique pris sous un nouvel angle
 + Technologies utilisées :
     - Javascript
-    - HTML5 Canvas
-    - Node.js
-    - Websockets
+    - HTML5 DOM
+    - JQuery
+    - require.js
 
 ![](°project-image°)

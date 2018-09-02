@@ -11,6 +11,7 @@
     "homepage": "https://github.com/AdrienHeisch/Portfolio#readme",
     "scripts": {
         "start": "webpack-dev-server --open",
+        "serve": "http-server dist",
         "type-css": "tcm src",
         "watch-type-css": "tcm -w src",
         "build": "npm run type-css && webpack -d",
@@ -24,7 +25,8 @@
         "react": "^16.4.0",
         "react-custom-scrollbars": "^4.2.1",
         "react-dom": "^16.4.0",
-        "react-localization": "^1.0.10"
+        "react-localization": "^1.0.10",
+        "react-pdf": "^3.0.5"
     },
     "devDependencies": {
         "@types/react": "^16.3.16",
@@ -33,12 +35,14 @@
         "babel-loader": "^7.1.4",
         "babel-preset-env": "^1.7.0",
         "babel-preset-react": "^6.24.1",
+        "clean-webpack-plugin": "^0.1.19",
+        "compression-webpack-plugin": "^1.1.11",
         "copy-webpack-plugin": "^4.5.1",
         "css-loader": "^0.28.11",
         "file-loader": "^1.1.11",
         "fork-ts-checker-webpack-plugin": "^0.4.2",
         "gh-pages": "^1.2.0",
-        "material-ui-time-picker": "^1.0.0",
+        "html-webpack-plugin": "^3.2.0",
         "raw-loader": "^0.5.1",
         "style-loader": "^0.21.0",
         "ts-loader": "^4.3.1",

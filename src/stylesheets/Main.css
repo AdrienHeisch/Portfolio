@@ -1,6 +1,8 @@
+@value backgroundColor: rgb(255, 160, 80);
+
 html {
     user-select: none;
-    font-size: 15px;
+    background-color: backgroundColor;
 }
 
 body {
@@ -16,9 +18,18 @@ body {
     min-height: 100vh;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 :global(#root) {
     margin: 16px;
     display: grid;
+    gap: 25px;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: minmax(0, 12rem) auto;
 }

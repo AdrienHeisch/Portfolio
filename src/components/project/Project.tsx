@@ -3,7 +3,7 @@ import * as styles from './Project.css';
 import notMobileImg from '../../../assets/images/notMobile.png';
 
 import * as React from 'react';
-import { Button, Dialog, DialogTitle, DialogContent, DialogActions, AppBar, Toolbar, IconButton, Typography, Slide, Snackbar, Paper } from '@material-ui/core';
+import { Button, Dialog, DialogContent, DialogActions, AppBar, Toolbar, IconButton, Typography, Slide } from '@material-ui/core';
 import { Close as CloseIcon } from '@material-ui/icons';
 import { TransitionProps } from 'react-transition-group/Transition';
 import Markdown from 'markdown-to-jsx';
@@ -14,13 +14,7 @@ import { localizedText } from './../../utils/LocalizedText';
 
 export class Project extends React.Component<IProjectProps, IProjectState> {
 
-    private getMarkdownMap ():Map<string, string> {
-        return new Map<string, string>()
-            .set('project-image', this.state.projectImageSource)
-        ;
-    }
-
-    public state = {
+    public state:IProjectState = {
         open: false,
         description: '',
         projectImageSource: '',
@@ -29,40 +23,31 @@ export class Project extends React.Component<IProjectProps, IProjectState> {
         noSourceOpen: true,
     };
 
-    private handleOpen = ():void => this.setState({ open: true });
-    private handleClose = ():void => this.setState({ open: false });
-
-    private openProject = ():Window => window.open(this.props.data.url);
-    private openSource = ():Window => window.open(this.props.data.source);
+    private language:string = '';
 
     public componentDidMount ():void {
-        import(`../../../assets/text/project-descriptions/${this.props.data.name}.md`).then(pResponse =>
-            this.setState({ description: pResponse.default })
-        );
+        this.loadDescription();
 
-        import(`../../../assets/images/projects/${this.props.data.name}.png`).then(pResponse =>
-            this.setState({ projectImageSource: pResponse.default })
-        );
+        import(`../../../assets/images/projects/${this.props.data.name}.png`)
+            .then(pResponse =>
+                this.setState({ projectImageSource: pResponse.default })
+            );
         
-        import(`../../../assets/images/tech/${this.props.data.tech}.png`).then(pResponse =>
-            this.setState({ techImageSource: pResponse.default })
-        );
-
-        // this.props.data.tech.forEach(pItem =>
-        //     import(`../../../assets/images/tech/${pItem}.png`).then(pResponse =>
-        //         this.setState(pPrevState => {
-        //             pPrevState.techImageSource.set(pItem, pResponse.default);
-        //             return pPrevState;
-        //         })
-        //     )
-        // );
+        import(`../../../assets/images/tech/${this.props.data.tech}.png`)
+            .then(pResponse =>
+                this.setState({ techImageSource: pResponse.default })
+            );
     }
 
     public render ():JSX.Element {
+        if (this.language !== localizedText.getLanguage()) this.loadDescription();
         return (
             <>
                 <Button
                     onClick={this.handleOpen}
+                    style={{
+                        border: 'solid black 2px'
+                    }}
                 >
                     <div className={styles.buttonTitle}>{this.props.data.name}</div>
                     <span
@@ -106,7 +91,15 @@ export class Project extends React.Component<IProjectProps, IProjectState> {
                                 autoHide
                                 autoHideTimeout={200}
                             >
-                                <Markdown>{dynamicMarkdown(this.state.description, this.getMarkdownMap())}</Markdown>
+                                <Markdown
+                                    options={{
+                                        overrides: {
+                                            Button: { component: Button }
+                                        }
+                                    }}
+                                >
+                                    {dynamicMarkdown(this.state.description, this.getMarkdownMap())}
+                                </Markdown>
                             </ScrollBars>
                         </div>
                     </DialogContent>
@@ -118,6 +111,26 @@ export class Project extends React.Component<IProjectProps, IProjectState> {
                 </Dialog>
             </>
         );
+    }
+
+    private handleOpen = ():void => this.setState({ open: true });
+    private handleClose = ():void => this.setState({ open: false });
+
+    private openProject = ():Window => window.open(this.props.data.url);
+    private openSource = ():Window => window.open(this.props.data.source);
+
+    private loadDescription ():void {
+        this.language = localizedText.getLanguage();
+        import(`../../../assets/text/project-descriptions/${this.language}/${this.props.data.name}.md`)
+            .then(pResponse =>
+                this.setState({ description: pResponse.default })
+            );
+    }
+    
+    private getMarkdownMap ():Map<string, string> {
+        return new Map<string, string>()
+            .set('project-image', this.state.projectImageSource)
+        ;
     }
 
 }

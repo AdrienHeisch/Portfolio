@@ -1,9 +1,9 @@
-const webpack = require('webpack');
 const path = require('path');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
-const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
-const WebpackShellPlugin = require('webpack-shell-plugin');
+const ForkTsCheckerPlugin = require('fork-ts-checker-webpack-plugin');
+const HTMLPlugin = require('html-webpack-plugin');
+const CleanPlugin = require('clean-webpack-plugin');
 
 const devServerPort = 8080;
 
@@ -18,7 +18,7 @@ module.exports = {
     entry: './src/Main.ts',
     output: {
         path: path.resolve('./dist/'),
-        filename: 'bundle.js'
+        filename: '[hash].js'
     },
     resolve: {
         extensions: [ '.tsx', '.ts', '.js', '.css' ]
@@ -56,11 +56,19 @@ module.exports = {
                 ]
             },
             {
-                test: /\.png$/,
+                test: /\.(png)$/,
                 include: /assets/,
                 loader: 'file-loader',
                 options: {
                     name: 'assets/[hash].[ext]'
+                }
+            },
+            {
+                test: /\.(pdf)$/,
+                include: /assets/,
+                loader: 'file-loader',
+                options: {
+                    name: 'assets/[name].[ext]'
                 }
             },
             {
@@ -74,11 +82,17 @@ module.exports = {
         ]
     },
     plugins: [
-        new WebpackShellPlugin({onBuildStart:['npm run type-css']}),
-        new CopyWebpackPlugin([
-            { from: './src/index.html', to: './' }
+        new HTMLPlugin({
+            filename: 'index.html',
+            template: './src/index.html'
+        }),
+        new CopyPlugin([
+            { from: './assets/local-projects/', to: './projects/' }
         ]),
-        new ForkTsCheckerWebpackPlugin(),
+        new CleanPlugin([ 'dist' ], {
+            exclude: [ 'projects' ]
+        }),
+        new ForkTsCheckerPlugin(),
         // new BundleAnalyzerPlugin()
     ]
 }

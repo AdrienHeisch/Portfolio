@@ -1,9 +1,14 @@
+@value backgroundColor from '../../stylesheets/Main.css';
+
 .buttonTitle {
-    background: radial-gradient(rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0) 75%);
+    --shadowOffset: 1.5px;
+    --shadowBlur: 2px;
+    background: radial-gradient(rgba(50, 50, 50, 0.5) 0, rgba(0, 0, 0, 0) 75%);
     color: white;
+    text-shadow: calc(-1 * var(--shadowOffset)) 0 var(--shadowBlur) backgroundColor, 0 var(--shadowOffset) var(--shadowBlur) backgroundColor;
     height: 2rem;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,11 +28,14 @@
 .description {
     height: 100%;
     position: relative;
+    text-align: justify;
 }
 
 .description img {
     width: 100%;
     max-width: 720px;
+    border: solid black 1.5px;
+    border-radius: 2px;
 }
 
 .info {
@@ -47,5 +55,10 @@
 
     .stack > img {
         display: none;
+    }
+
+    .description img {
+        max-width: calc(100% - 4px);
+        border-width: 1px;
     }
 }

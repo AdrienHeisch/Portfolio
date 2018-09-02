@@ -1,0 +1,14 @@
+.languages {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.languagesIcon {
+    position: absolute;
+    right: 5px;
+    top: 2px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
