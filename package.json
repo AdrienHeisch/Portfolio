@@ -16,7 +16,7 @@
         "watch-type-css": "tcm -w src",
         "build": "npm run type-css && webpack -d",
         "build-prod": "npm run type-css && webpack -p",
-        "deploy": "npm run build-prod && gh-pages -d dist"
+        "deploy": "npm run build-prod && gh-pages -b master -d dist"
     },
     "dependencies": {
         "@material-ui/core": "^1.2.0",
