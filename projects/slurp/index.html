@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
+	<head>
+		<title>Slurp</title>
+		<link href="./icons/desktop/icon_128.png" rel="icon" type="image/x-icon" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script type="text/javascript" src="swfobject.js"></script>
+		<script type="text/javascript">
+			var swfVersionStr = "26.0.0";
+			var xiSwfUrlStr = "";
+			var flashvars = {};
+			var params = {};
+			params.quality = "medium";
+			params.bgcolor = "#0066cc";
+			params.play = "true";
+			params.loop = "true";
+			params.wmode = "window";
+			params.scale = "showall";
+			params.menu = "true";
+			params.devicefont = "false";
+			params.salign = "";
+			params.allowscriptaccess = "sameDomain";
+			params.allowFullScreen = "true";
+			var attributes = {};
+			attributes.id = "Shmup";
+			attributes.name = "Shmup";
+			attributes.align = "middle";
+			swfobject.createCSS("html", "height:100%; background-color: #0066cc;");
+			swfobject.createCSS("body", "margin:0; padding:0; overflow:hidden; height:100%;");
+			swfobject.embedSWF(
+				"Shmup.swf", "flashContent",
+				"1136", "640",
+				swfVersionStr, xiSwfUrlStr,
+				flashvars, params, attributes);
+		</script>
+	</head>
+	<body>
+		<!-- La méthode d'incorporation dynamique de l'objet SWF remplace ce contenu HTML alternatif par le contenu Flash lorsque les plug-ins JavaScript et Flash sont suffisamment pris en charge. -->
+		<div id="flashContent">
+			<a href="http://www.adobe.com/go/getflash">
+				<img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Obtenir Adobe Flash Player" />
+			</a>
+			<p>Cette page requiert Flash Player version 26.0.0 ou ultérieure.</p>
+		</div>
+	</body>
+</html>

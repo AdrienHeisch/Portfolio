@@ -1,0 +1,33 @@
+html {
+	background-color: #ffffff;
+}
+
+body {
+	margin:0;
+	padding:0;
+	overflow:hidden;
+}
+
+#flashContent {
+	height: 100vh;
+	width: calc(100vh * 9 / 16);
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	border-left: solid black 2px;
+	border-right: solid black 2px;
+}
+
+#downloadApk {
+	display: none;
+}
+
+@media screen and (max-width: 600px) {
+	#flashContent {
+		display: none;
+	}
+	
+	#downloadApk {
+		display: unset;
+	}
+}

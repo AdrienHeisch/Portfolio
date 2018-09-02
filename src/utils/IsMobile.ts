@@ -1,1 +1,0 @@
-export const isMobile = () => window.matchMedia('screen and (max-width: 600px)').matches;
