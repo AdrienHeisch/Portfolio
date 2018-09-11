@@ -84,7 +84,8 @@ module.exports = {
     plugins: [
         new HTMLPlugin({
             filename: 'index.html',
-            template: './src/index.html'
+            template: './src/index.html',
+            favicon: './assets/favicon.ico'
         }),
         new CopyPlugin([
             { from: './assets/local-projects/', to: './projects/' }

@@ -2,13 +2,13 @@
     "name": "ah-timers",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/AdrienHeisch/Portfolio.git"
+        "url": "git+https://github.com/AdrienHeisch/adrienheisch.github.io.git"
     },
     "author": "Adrien Heisch",
     "bugs": {
-        "url": "https://github.com/AdrienHeisch/Portfolio/issues"
+        "url": "https://github.com/AdrienHeisch/adrienheisch.github.io/issues"
     },
-    "homepage": "https://github.com/AdrienHeisch/Portfolio#readme",
+    "homepage": "https://github.com/AdrienHeisch/adrienheisch.github.io#readme",
     "scripts": {
         "start": "webpack-dev-server --open",
         "serve": "http-server dist",

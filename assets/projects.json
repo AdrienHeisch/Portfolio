@@ -3,8 +3,8 @@
         "name": "Portfolio",
         "tech": "HTML5",
         "mobile": true,
-        "url": "https://adrienheisch.github.io/Portfolio/",
-        "source": "https://github.com/AdrienHeisch/Portfolio/"
+        "url": "https://adrienheisch.github.io/",
+        "source": "https://github.com/AdrienHeisch/adrienheisch.github.io/"
     },
     {
         "name": "Timers-React",

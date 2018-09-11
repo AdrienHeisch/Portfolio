@@ -1,7 +1,7 @@
 import * as styles from './App.css';
 
 import curriculumVitaeImg from '../../../assets/images/curriculumVitae.png';
-import curriculumVitaePdf from '../../../assets/pdf/adrien-heisch-cv.pdf';
+import urls from '../../../assets/urls.json';
 
 import * as React from 'react';
 import { Project } from '../project/Project';
@@ -47,7 +47,7 @@ export class App extends React.Component<IAppProps, IAppState> {
         );
     }
 
-    private handleOpenCV = ():Window => window.open(curriculumVitaePdf);
+    private handleOpenCV = ():Window => window.open(urls.cv);
 
     private setLanguage = (pLanguage:string):void => {
         localizedText.setLanguage(pLanguage);
