@@ -8,16 +8,26 @@ import { Project } from '../project/Project';
 import { localizedText } from './../../utils/LocalizedText';
 import { Paper, Typography } from '@material-ui/core';
 import { LanguageSelector } from '../language-selector/LanguageSelector';
+import { ConfettiCanvas } from '../confetti-canvas/ConfettiCanvas';
 
 export class App extends React.Component<IAppProps, IAppState> {
-
-    public componentWillMount () {
-        (window as any).setLang = (lang:string) => this.setLanguage(lang);
-    }
 
     public render ():JSX.Element {
         return (
             <>
+                {
+                    (() => {
+                        if (window.location.href.includes('party')) return (
+                            <ConfettiCanvas
+                                width={window.innerWidth}
+                                height={window.innerHeight}
+                                nCanons={Math.round(window.innerWidth / 255)}
+                                nParticles={window.innerWidth * window.innerWidth / 1000}
+                                delay={1}
+                            />
+                        );
+                    })()
+                }
                 <div className={styles.headerContainer}>
                     <Paper className={styles.header} style={{ fontFamily: 'Open sans', padding: '10px' }}>
                         <Typography variant={'title'} style={{ fontFamily: 'inherit' }} align={'center'}>{localizedText.header.title}</Typography>
