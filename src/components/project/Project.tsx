@@ -44,7 +44,7 @@ export class Project extends React.Component<IProjectProps, IProjectState> {
         return (
             <>
                 <Button
-                    onClick={this.handleOpen}
+                    onClick={() => this.handleOpen()}
                     style={{
                         border: 'solid black 2px'
                     }}
@@ -68,19 +68,16 @@ export class Project extends React.Component<IProjectProps, IProjectState> {
                 <Dialog
                     fullScreen
                     open={this.state.open}
-                    onClose={this.handleClose}
+                    onClose={() => this.handleClose()}
                     TransitionComponent={Transition}
                 >
                     <AppBar style={{ position: 'relative', marginBottom: 15 }}>
                         <Toolbar>
-                            <IconButton color='inherit' onClick={this.handleClose}>
+                            <IconButton color='inherit' onClick={() => this.handleClose()}>
                                 <CloseIcon />
                             </IconButton>
                             <Typography variant='title' color='inherit' style={{ marginLeft: 5 }}>{this.props.data.name}</Typography>
                             <div className={styles.stack}>
-                                {/* {this.props.data.tech.map(pItem => 
-                                    <img key={pItem} title={pItem} src={this.state.stackImagesSources.get(pItem)} />
-                                )} */}
                                 <img title={this.props.data.tech} src={this.state.techImageSource} />
                             </div>
                         </Toolbar>
@@ -105,19 +102,33 @@ export class Project extends React.Component<IProjectProps, IProjectState> {
                     </DialogContent>
                     <DialogActions>
                         <img src={notMobileImg} style={{ width: '1.5rem', minWidth: 'unset', display: isMobile() && !this.props.data.mobile ? 'inline' : 'none' }} />
-                        <Button color='primary' variant='contained' disabled={!Boolean(this.props.data.url) || (isMobile() && !this.props.data.mobile)} onClick={this.openProject}>{localizedText.projectDialog.buttons.try}</Button>
-                        <Button color='primary' variant='contained' disabled={!Boolean(this.props.data.source)} onClick={this.openSource}>{localizedText.projectDialog.buttons.source}</Button>
+                        <Button
+                            color='primary'
+                            variant='contained'
+                            disabled={!Boolean(this.props.data.url) || (isMobile() && !this.props.data.mobile)}
+                            onClick={() => this.openProject()}
+                        >
+                            {localizedText.projectDialog.buttons.try}
+                        </Button>
+                        <Button
+                            color='primary'
+                            variant='contained'
+                            disabled={!Boolean(this.props.data.source)}
+                            onClick={() => this.openSource()}
+                        >
+                            {localizedText.projectDialog.buttons.source}
+                        </Button>
                     </DialogActions>
                 </Dialog>
             </>
         );
     }
 
-    private handleOpen = ():void => this.setState({ open: true });
-    private handleClose = ():void => this.setState({ open: false });
+    private handleOpen ():void { this.setState({ open: true }); }
+    private handleClose ():void { this.setState({ open: false }); }
 
-    private openProject = ():Window => window.open(this.props.data.url);
-    private openSource = ():Window => window.open(this.props.data.source);
+    private openProject ():void { window.open(this.props.data.url); }
+    private openSource ():void { window.open(this.props.data.source); }
 
     private loadDescription ():void {
         this.language = localizedText.getLanguage();

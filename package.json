@@ -21,6 +21,7 @@
     "dependencies": {
         "@material-ui/core": "^1.2.0",
         "@material-ui/icons": "^1.1.0",
+        "@types/url-parse": "^1.4.1",
         "markdown-to-jsx": "^6.6.6",
         "react": "^16.4.0",
         "react-custom-scrollbars": "^4.2.1",

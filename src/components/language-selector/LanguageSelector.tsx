@@ -18,7 +18,7 @@ export class LanguageSelector extends React.Component<ILanguageSelectorProps, IL
                 <Menu
                     anchorEl={this.state.languagesMenuAnchor}
                     open={ this.state.languagesMenuAnchor !== undefined }
-                    onClose={ () => this.closeMenu() }
+                    onClose={() => this.closeMenu()}
                 >
                     {this.props.languages.map(pLanguage => (
                         <MenuItem
@@ -38,7 +38,7 @@ export class LanguageSelector extends React.Component<ILanguageSelectorProps, IL
         );
     }
 
-    private closeMenu = ():void => this.setState({ languagesMenuAnchor: undefined });
+    private closeMenu ():void { this.setState({ languagesMenuAnchor: undefined }); }
 
 }
 

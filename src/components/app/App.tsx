@@ -9,6 +9,7 @@ import { localizedText } from './../../utils/LocalizedText';
 import { Paper, Typography } from '@material-ui/core';
 import { LanguageSelector } from '../language-selector/LanguageSelector';
 import { ConfettiCanvas } from '../confetti-canvas/ConfettiCanvas';
+import * as URL from 'url-parse';
 
 export class App extends React.Component<IAppProps, IAppState> {
 
@@ -17,7 +18,7 @@ export class App extends React.Component<IAppProps, IAppState> {
             <>
                 {
                     (() => {
-                        if (window.location.href.includes('party')) return (
+                        if (new URL(window.location.href, window.location.href, true).query['party'] !== undefined) return (
                             <ConfettiCanvas
                                 width={window.innerWidth}
                                 height={window.innerHeight}
@@ -38,13 +39,13 @@ export class App extends React.Component<IAppProps, IAppState> {
                     </Paper>
                     <LanguageSelector
                         languages={localizedText.getAvailableLanguages()}
-                        onLanguageSelection={this.setLanguage}
+                        onLanguageSelection={(pLanguage:string) => this.setLanguage(pLanguage)}
                     />
                     <img // CV
                         className={styles.cvImage}
                         src={curriculumVitaeImg}
                         title={localizedText.curriculumVitae}
-                        onClick={this.handleOpenCV}
+                        onClick={() => this.handleOpenCV()}
                     />
                 </div>
                 <div className={styles.projects}>
@@ -57,9 +58,9 @@ export class App extends React.Component<IAppProps, IAppState> {
         );
     }
 
-    private handleOpenCV = ():Window => window.open(urls.cv);
+    private handleOpenCV ():void { window.open(urls.cv); }
 
-    private setLanguage = (pLanguage:string):void => {
+    private setLanguage (pLanguage:string):void {
         localizedText.setLanguage(pLanguage);
         this.setState({});
     }
