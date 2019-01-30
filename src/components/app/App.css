@@ -1,5 +1,5 @@
 :root {
-    --projectButtonWidth: 360px;
+    --projectButtonWidth: 480px;
     --projectButtonHeight: auto;
 }
 
@@ -12,7 +12,7 @@
 
 .header {
     position: relative;
-    width: 360px;
+    width: 480px;
 }
 
 .cvImage {

@@ -5,6 +5,7 @@
             "body": "Welcome to my portfolio !\nYou can check out my projects and their source codes below, from the most recent to the oldest one.\nI am currently looking for an internship near Paris !",
             "bottom": "Adrien Heisch"
         },
+        "github": "Check out my GitHub !",
         "curriculumVitae": "Curriculum Vitæ - in French !",
         "projectDialog": {
             "buttons": {
@@ -12,7 +13,7 @@
                 "source": "See source code"
             },
             "snackbars": {
-                "mobile": "This project won't run on your current device.",
+                "mobile": "Sorry, but this project won't run on your current device.",
                 "source": "Sorry, but the source code for this project is not public."
             }
         }
@@ -23,6 +24,7 @@
             "body": "Bienvenue sur mon portfolio !\nVous pouvez consulter ci-dessous mes projets et leurs codes source, du plus récent au plus ancien.\nJe suis actuellement à la recherche d'une alternance en région parisienne !",
             "bottom": "Adrien Heisch"
         },
+        "github": "Mon profil GitHub.",
         "curriculumVitae": "Curriculum Vitæ",
         "projectDialog": {
             "buttons": {
@@ -30,7 +32,7 @@
                 "source": "Code source"
             },
             "snackbars": {
-                "mobile": "Ce projet n'est pas compatible avec votre appareil actuel.",
+                "mobile": "Désolé, ce projet n'est pas compatible avec votre appareil actuel.",
                 "source": "Désolé, mais le code source de ce projet n'est pas accessible."
             }
         }

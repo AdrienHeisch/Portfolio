@@ -12,8 +12,8 @@ To play on a touch screen, you have to hold your phone in landscape orientation.
     - Customized physics
     - Touch controls and mobile responsivity
 + Technology stack :
-    - Javascript ES5
-    - HTML5 Canvas + JQuery
+    - Javascript ES6
+    - HTML5 Canvas
     - Node.js
     - Websockets
 

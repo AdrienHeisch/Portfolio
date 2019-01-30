@@ -1,9 +1,9 @@
 const path = require('path');
 const CopyPlugin = require('copy-webpack-plugin');
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const ForkTsCheckerPlugin = require('fork-ts-checker-webpack-plugin');
 const HTMLPlugin = require('html-webpack-plugin');
 const CleanPlugin = require('clean-webpack-plugin');
+//const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 const devServerPort = 8080;
 
@@ -56,7 +56,7 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(png)$/,
+                test: /\.(png|svg)$/,
                 include: /assets/,
                 loader: 'file-loader',
                 options: {
@@ -88,7 +88,7 @@ module.exports = {
             favicon: './assets/favicon.ico'
         }),
         new CopyPlugin([
-            { from: './assets/local-projects/', to: './projects/' }
+            { from: './assets/local-projects/slurp', to: './projects/slurp' }
         ]),
         new CleanPlugin([ 'dist' ], {
             exclude: [ 'projects' ]

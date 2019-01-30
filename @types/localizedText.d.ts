@@ -6,6 +6,7 @@ declare interface ILocalizedText extends LocalizedStringsMethods {
         body:string;
         bottom:string;
     }
+    github:string;
     curriculumVitae:string;
     projectDialog:{
         buttons:{

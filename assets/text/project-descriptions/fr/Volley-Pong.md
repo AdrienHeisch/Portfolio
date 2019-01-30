@@ -12,8 +12,8 @@ Pour jouer sur mobile, tenez votre smartphone en orientation paysage. Vous pouve
     - Physique adaptée au gameplay
     - Compatible mobile / tactile
 + Technologies utilisées :
-    - Javascript ES5
-    - HTML5 Canvas + JQuery
+    - Javascript ES6
+    - HTML5 Canvas
     - Node.js
     - Websockets
 

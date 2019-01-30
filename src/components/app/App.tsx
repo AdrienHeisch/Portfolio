@@ -1,12 +1,13 @@
 import * as styles from './App.css';
 
 import curriculumVitaeImg from '../../../assets/images/curriculumVitae.png';
+import githubImg from '../../../assets/images/github.svg';
 import urls from '../../../assets/urls.json';
 
 import * as React from 'react';
 import { Project } from '../project/Project';
 import { localizedText } from './../../utils/LocalizedText';
-import { Paper, Typography } from '@material-ui/core';
+import { Paper, Typography, Button } from '@material-ui/core';
 import { LanguageSelector } from '../language-selector/LanguageSelector';
 import { ConfettiCanvas } from '../confetti-canvas/ConfettiCanvas';
 import * as URL from 'url-parse';
@@ -52,6 +53,36 @@ export class App extends React.Component<IAppProps, IAppState> {
                     {this.props.projects.map(pProjectData => (
                         <Project key={pProjectData.name} data={pProjectData} />
                     ))}
+                    <Button //GitHub
+                        onClick={() => window.open("https://github.com/AdrienHeisch")}
+                        style={{
+                            border: 'solid black 2px'
+                        }}
+                    >
+                        <div>{localizedText.github}</div>
+                        <span
+                            style={(() => {
+                                const o:any = {
+                                    position: 'absolute',
+                                    left:0,
+                                    top:0,
+                                    backgroundColor: 'white',
+                                    backgroundPosition: 'center',
+                                    backgroundRepeat: 'no-repeat',
+                                    width: '100%',
+                                    height: '100%',
+                                    zIndex: -1
+                                };
+
+                                if (!window.matchMedia("screen and (max-width: 600px)").matches) {
+                                    o.backgroundImage = `url(${githubImg})`;
+                                    o.backgroundSize = "50%";
+                                }
+
+                                return o;
+                            })()}
+                        ></span>
+                    </Button>
                 </div>
                 <div className={styles.bottomHider}></div>
             </>
